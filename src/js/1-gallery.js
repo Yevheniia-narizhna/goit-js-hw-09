@@ -65,3 +65,23 @@ const images = [
     description: 'Lighthouse Coast Sea',
   },
 ];
+
+const gallery = document.querySelector('.gallery');
+
+const imgGallery = images
+  .map(
+    ({ preview, original, description }) =>
+      `<li class="gallery-item">
+  <a class="gallery-link" href="${original}">
+    <img class="gallery-image" src="${preview}" alt="${description}" />
+  </a>
+</li>;`
+  )
+  .join('');
+gallery.insertAdjacentHTML('beforeend', imgGallery);
+
+new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionPosition: 'bottom',
+  captionDelay: 250,
+});
