@@ -73,7 +73,7 @@ const imgGallery = images
     ({ preview, original, description }) =>
       `<li class="gallery-item">
   <a class="gallery-link" href="${original}">
-    <img class="gallery-image" src="${preview}" alt="${description}" />
+    <img class="gallery-image" src="${preview}" alt="${description}" width='360'/>
   </a>
 </li>;`
   )
