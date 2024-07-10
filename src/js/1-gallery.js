@@ -75,7 +75,7 @@ const imgGallery = images
   <a class="gallery-link" href="${original}">
     <img class="gallery-image" src="${preview}" alt="${description}" width='360'/>
   </a>
-</li>;`
+</li>`
   )
   .join('');
 gallery.insertAdjacentHTML('beforeend', imgGallery);
