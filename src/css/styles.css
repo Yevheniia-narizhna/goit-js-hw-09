@@ -56,8 +56,9 @@ img {
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  
   justify-content: center;
+  column-gap: 12px;
+  row-gap: 12px;
 }
 
 .gallery-item {
