@@ -3,4 +3,4 @@ import{S as n}from"./vendor-10cb7c31.js";(function(){const t=document.createElem
     <img class="gallery-image" src="${a}" alt="${i}" width='360'/>
   </a>
 </li>`).join("");s.insertAdjacentHTML("beforeend",l);new n(".gallery a",{captionsData:"alt",captionPosition:"bottom",captionDelay:250});
-//# sourceMappingURL=1-gallery-107d2341.js.map
+//# sourceMappingURL=1-gallery-f0dd948c.js.map
