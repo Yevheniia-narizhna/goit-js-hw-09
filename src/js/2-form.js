@@ -17,11 +17,6 @@ function formSubmit(event) {
   event.currentTarget.reset();
 }
 
-/*
- * - Отримуємо значення поля
- * - Зберігаємо його у сховище
- */
-
 function formInput(event) {
   const value = event.target.value;
   const key = event.target.name;
@@ -53,11 +48,6 @@ function formInput(event) {
   }
 }
 
-/*
- * - Отримуємо значення зі сховища
- * - Якщо там щось було, оновлюємо DOM
- */
-
 function populateForm() {
   let formData = {};
 
@@ -68,7 +58,6 @@ function populateForm() {
     return;
   }
 
-  // якщо в ЛС не існує таке значення, то виходимо з фукнції
   if (!formData) {
     return;
   }
