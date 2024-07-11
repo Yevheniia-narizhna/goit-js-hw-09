@@ -65,3 +65,21 @@ img {
   flex-basis: calc((100% - 48px) / 3);
   transition: transform .3s;
 }
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.form-label {
+  display: flex;
+  flex-direction: column;
+}
+.button {
+  border: none;
+  width: 95px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #4E75FF;
+  color: #FFFFFF;
+}
