@@ -9,7 +9,7 @@ populateForm();
 
 function formSubmit(event) {
   event.preventDefault();
-  if (email.textarea === '' || message.textarea === '') {
+  if (form.elements.email.value === '' || form.elements.message.value === '') {
     return alert('Please fill in all the fields!');
   }
   localStorage.removeItem(STORAGE_KEY);
