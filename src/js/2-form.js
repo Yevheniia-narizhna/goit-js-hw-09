@@ -8,10 +8,17 @@ form.addEventListener('input', formInput);
 populateForm();
 
 function formSubmit(event) {
+  const emailForm = form.elements.email.value;
+  const messageForm = form.elements.message.value;
+
   event.preventDefault();
-  if (form.elements.email.value === '' || form.elements.message.value === '') {
+  if (emailForm === '' || messageForm === '') {
     return alert('Please fill in all the fields!');
   }
+  console.log({
+    email: emailForm,
+    message: messageForm,
+  });
   localStorage.removeItem(STORAGE_KEY);
 
   event.currentTarget.reset();
