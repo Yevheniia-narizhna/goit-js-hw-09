@@ -8,8 +8,8 @@ form.addEventListener('input', formInput);
 populateForm();
 
 function formSubmit(event) {
-  const emailForm = form.elements.email.value;
-  const messageForm = form.elements.message.value;
+  const emailForm = form.elements.email.value.trim();
+  const messageForm = form.elements.message.value.trim();
 
   event.preventDefault();
   if (emailForm === '' || messageForm === '') {
